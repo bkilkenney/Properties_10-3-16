@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace Properties_10_3_16
 {
-    class TimePeriod
+    class TimePeriod  //Internally my class stores time in seconds.  
     {
 
         private double seconds;
 
         public double Hours
         {
-            get { return seconds / 3600; }
-            set { seconds = value * 3600;  } 
+            get { return this.seconds / 3600; }  //If you get something you bring it back - return
+            set { this.seconds = value * 3600;  }   //seconds = the value of hours * 3600
         }
+        
+       
 
 
     }
